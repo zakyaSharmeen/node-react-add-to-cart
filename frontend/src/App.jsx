@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 
 const Cart = () => {
     const [cart, setCart] = useState([]);
-    const [item, setItem] = useState({ foodId: "", name: "", price: 0, quantity: 1 });
+    const [item, setItem] = useState({  name: "", price: 0, quantity: 1 });
 
     useEffect(() => {
         fetch("http://localhost:3000/cart")
